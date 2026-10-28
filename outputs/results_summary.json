@@ -1,0 +1,500 @@
+{
+  "raw_records": 49547,
+  "raw_attributes": 9,
+  "raw_dtypes": {
+    "date": "str",
+    "home_team": "str",
+    "away_team": "str",
+    "home_score": "int64",
+    "away_score": "int64",
+    "tournament": "str",
+    "city": "str",
+    "country": "str",
+    "neutral": "bool"
+  },
+  "describe": {
+    "home_score": {
+      "count": 49547.0,
+      "mean": 1.757,
+      "std": 1.774,
+      "min": 0.0,
+      "25%": 1.0,
+      "50%": 1.0,
+      "75%": 2.0,
+      "max": 31.0
+    },
+    "away_score": {
+      "count": 49547.0,
+      "mean": 1.183,
+      "std": 1.402,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 1.0,
+      "75%": 2.0,
+      "max": 21.0
+    }
+  },
+  "n_teams": 337,
+  "n_tournaments": 202,
+  "n_countries": 269,
+  "date_range": [
+    "1872-11-30",
+    "2026-08-26"
+  ],
+  "neutral_counts": {
+    "false": 36389,
+    "true": 13158
+  },
+  "quality": {
+    "missing_per_column": {
+      "date": 0,
+      "home_team": 0,
+      "away_team": 0,
+      "home_score": 0,
+      "away_score": 0,
+      "tournament": 0,
+      "city": 0,
+      "country": 0,
+      "neutral": 0
+    },
+    "exact_duplicates": 0,
+    "same_fixture_same_day": 2,
+    "same_fixture_rows": [
+      {
+        "date": "1974-02-17",
+        "home_team": "Tahiti",
+        "away_team": "New Caledonia",
+        "home_score": 2,
+        "away_score": 1,
+        "tournament": "Friendly",
+        "city": "Papeete",
+        "country": "Tahiti",
+        "neutral": false
+      },
+      {
+        "date": "1974-02-17",
+        "home_team": "Tahiti",
+        "away_team": "New Caledonia",
+        "home_score": 1,
+        "away_score": 2,
+        "tournament": "Friendly",
+        "city": "Papeete",
+        "country": "Tahiti",
+        "neutral": false
+      }
+    ],
+    "date_dtype_before": "str",
+    "self_matches": 0,
+    "negative_scores": 0,
+    "unparseable_dates": 0,
+    "rows_without_score_removed": 0,
+    "extreme_margin_matches_(>=10)": 268,
+    "records_after_cleaning": 49547,
+    "missing_form_values_imputed": 303
+  },
+  "result_share_all": {
+    "Home Win": 49.0,
+    "Away Win": 28.28,
+    "Draw": 22.73
+  },
+  "goals_by_decade": {
+    "1870": 4.538,
+    "1880": 5.582,
+    "1890": 5.153,
+    "1900": 4.159,
+    "1910": 4.218,
+    "1920": 3.884,
+    "1930": 4.319,
+    "1940": 4.345,
+    "1950": 4.004,
+    "1960": 3.479,
+    "1970": 2.975,
+    "1980": 2.527,
+    "1990": 2.779,
+    "2000": 2.802,
+    "2010": 2.738,
+    "2020": 2.72
+  },
+  "home_advantage": {
+    "Home venue": {
+      "Away Win": 26.41,
+      "Draw": 22.84,
+      "Home Win": 50.74
+    },
+    "Neutral venue": {
+      "Away Win": 33.42,
+      "Draw": 22.41,
+      "Home Win": 44.16
+    }
+  },
+  "tournament_summary": {
+    "Friendly": {
+      "matches": 18385,
+      "avg_goals": 2.87,
+      "home_win_pct": 47.32
+    },
+    "Qualifier": {
+      "matches": 15928,
+      "avg_goals": 2.87,
+      "home_win_pct": 51.47
+    },
+    "Other Tournament": {
+      "matches": 10003,
+      "avg_goals": 3.27,
+      "home_win_pct": 49.43
+    },
+    "Continental Final": {
+      "matches": 3083,
+      "avg_goals": 2.73,
+      "home_win_pct": 47.32
+    },
+    "Nations League": {
+      "matches": 1080,
+      "avg_goals": 2.78,
+      "home_win_pct": 45.09
+    },
+    "World Cup": {
+      "matches": 1068,
+      "avg_goals": 2.84,
+      "home_win_pct": 45.69
+    }
+  },
+  "elo_bins": {
+    "(-800, -300]": {
+      "Away Win": 81.29,
+      "Draw": 12.2,
+      "Home Win": 6.51
+    },
+    "(-300, -200]": {
+      "Away Win": 60.86,
+      "Draw": 24.93,
+      "Home Win": 14.21
+    },
+    "(-200, -100]": {
+      "Away Win": 50.27,
+      "Draw": 27.78,
+      "Home Win": 21.94
+    },
+    "(-100, 0]": {
+      "Away Win": 39.62,
+      "Draw": 28.77,
+      "Home Win": 31.61
+    },
+    "(0, 100]": {
+      "Away Win": 28.13,
+      "Draw": 29.55,
+      "Home Win": 42.32
+    },
+    "(100, 200]": {
+      "Away Win": 18.57,
+      "Draw": 26.15,
+      "Home Win": 55.29
+    },
+    "(200, 300]": {
+      "Away Win": 11.64,
+      "Draw": 22.32,
+      "Home Win": 66.04
+    },
+    "(300, 400]": {
+      "Away Win": 7.06,
+      "Draw": 17.37,
+      "Home Win": 75.57
+    },
+    "(400, 1200]": {
+      "Away Win": 2.7,
+      "Draw": 8.69,
+      "Home Win": 88.6
+    }
+  },
+  "corr_with_target": {
+    "elo_diff": 0.514,
+    "form_diff": 0.29,
+    "exp_diff": 0.319,
+    "home_gf5": 0.139,
+    "home_ga5": -0.202,
+    "away_gf5": -0.16,
+    "away_ga5": 0.178,
+    "neutral": -0.095,
+    "home_in_own_country": 0.093
+  },
+  "top_elo_teams": {
+    "Spain": 2325.7,
+    "Argentina": 2248.6,
+    "England": 2197.4,
+    "France": 2139.6,
+    "Colombia": 2085.4,
+    "Brazil": 2075.9,
+    "Portugal": 2058.9,
+    "Netherlands": 2044.1,
+    "Morocco": 2028.4,
+    "Belgium": 2025.2
+  },
+  "features": [
+    "elo_diff",
+    "home_elo",
+    "away_elo",
+    "form_diff",
+    "home_gf5",
+    "home_ga5",
+    "home_pts5",
+    "away_gf5",
+    "away_ga5",
+    "away_pts5",
+    "exp_diff",
+    "neutral",
+    "home_in_own_country",
+    "tour_Continental Final",
+    "tour_Friendly",
+    "tour_Nations League",
+    "tour_Other Tournament",
+    "tour_Qualifier",
+    "tour_World Cup"
+  ],
+  "model_records": 25485,
+  "split": {
+    "train": 20778,
+    "test": 4707,
+    "train_period": "2000\u20132021",
+    "test_period": "2022\u20132026"
+  },
+  "architecture_search": {
+    "MLP (32)": {
+      "val_accuracy": 60.14,
+      "val_log_loss": 0.864,
+      "epochs": 21
+    },
+    "MLP (64, 32)": {
+      "val_accuracy": 60.0,
+      "val_log_loss": 0.8675,
+      "epochs": 32
+    },
+    "MLP (128, 64, 32)": {
+      "val_accuracy": 60.2,
+      "val_log_loss": 0.8648,
+      "epochs": 24
+    }
+  },
+  "best_architecture": "MLP (32)",
+  "epochs_trained": 41,
+  "n_parameters": 739,
+  "test_accuracy": 60.31,
+  "test_macro_f1": 0.4564,
+  "test_weighted_f1": 0.5328,
+  "test_log_loss": 0.8732,
+  "classification_report": {
+    "Away Win": {
+      "precision": 0.5595823095823096,
+      "recall": 0.6568132660418169,
+      "f1-score": 0.6043117744610282,
+      "support": 1387.0
+    },
+    "Draw": {
+      "precision": 0.35384615384615387,
+      "recall": 0.021395348837209303,
+      "f1-score": 0.04035087719298246,
+      "support": 1075.0
+    },
+    "Home Win": {
+      "precision": 0.6320504313205043,
+      "recall": 0.8485523385300668,
+      "f1-score": 0.7244723331431832,
+      "support": 2245.0
+    },
+    "accuracy": 0.6031442532398555,
+    "macro avg": {
+      "precision": 0.5151596315829893,
+      "recall": 0.5089203178030309,
+      "f1-score": 0.45637832826573127,
+      "support": 4707.0
+    },
+    "weighted avg": {
+      "precision": 0.5471592303143852,
+      "recall": 0.6031442532398555,
+      "f1-score": 0.5328230320939767,
+      "support": 4707.0
+    }
+  },
+  "baseline_majority_acc": 47.69,
+  "baseline_elo_rule_acc": 60.21,
+  "baseline_uniform_log_loss": 1.0986,
+  "confusion_matrix": [
+    [
+      1905,
+      25,
+      315
+    ],
+    [
+      650,
+      23,
+      402
+    ],
+    [
+      459,
+      17,
+      911
+    ]
+  ],
+  "actual_vs_pred_counts": {
+    "actual": {
+      "Home Win": 2245,
+      "Draw": 1075,
+      "Away Win": 1387
+    },
+    "predicted": {
+      "Home Win": 3014,
+      "Draw": 65,
+      "Away Win": 1628
+    }
+  },
+  "calibration": [
+    {
+      "mean_pred": 0.054,
+      "observed": 0.069,
+      "n": 363
+    },
+    {
+      "mean_pred": 0.151,
+      "observed": 0.148,
+      "n": 487
+    },
+    {
+      "mean_pred": 0.25,
+      "observed": 0.263,
+      "n": 499
+    },
+    {
+      "mean_pred": 0.347,
+      "observed": 0.334,
+      "n": 578
+    },
+    {
+      "mean_pred": 0.451,
+      "observed": 0.491,
+      "n": 617
+    },
+    {
+      "mean_pred": 0.549,
+      "observed": 0.542,
+      "n": 517
+    },
+    {
+      "mean_pred": 0.648,
+      "observed": 0.617,
+      "n": 517
+    },
+    {
+      "mean_pred": 0.75,
+      "observed": 0.761,
+      "n": 439
+    },
+    {
+      "mean_pred": 0.846,
+      "observed": 0.816,
+      "n": 429
+    },
+    {
+      "mean_pred": 0.94,
+      "observed": 0.912,
+      "n": 261
+    }
+  ],
+  "accuracy_by_confidence": {
+    "(0.0, 0.5]": {
+      "matches": 1575,
+      "accuracy": 42.92
+    },
+    "(0.5, 0.6]": {
+      "matches": 816,
+      "accuracy": 53.92
+    },
+    "(0.6, 0.7]": {
+      "matches": 767,
+      "accuracy": 60.63
+    },
+    "(0.7, 0.8]": {
+      "matches": 648,
+      "accuracy": 74.69
+    },
+    "(0.8, 1.0]": {
+      "matches": 901,
+      "accuracy": 85.9
+    }
+  },
+  "wc2026": {
+    "matches": 104,
+    "accuracy": 66.35
+  },
+  "sample_predictions": [
+    {
+      "date": "09 Jul 2026",
+      "match": "France vs Morocco",
+      "score": "2\u20130",
+      "actual": "Home Win",
+      "predicted": "Home Win",
+      "probs": "0.57 / 0.23 / 0.19"
+    },
+    {
+      "date": "10 Jul 2026",
+      "match": "Spain vs Belgium",
+      "score": "2\u20131",
+      "actual": "Home Win",
+      "predicted": "Home Win",
+      "probs": "0.48 / 0.27 / 0.25"
+    },
+    {
+      "date": "11 Jul 2026",
+      "match": "Norway vs England",
+      "score": "1\u20132",
+      "actual": "Away Win",
+      "predicted": "Away Win",
+      "probs": "0.26 / 0.25 / 0.49"
+    },
+    {
+      "date": "11 Jul 2026",
+      "match": "Argentina vs Switzerland",
+      "score": "3\u20131",
+      "actual": "Home Win",
+      "predicted": "Home Win",
+      "probs": "0.64 / 0.22 / 0.15"
+    },
+    {
+      "date": "14 Jul 2026",
+      "match": "France vs Spain",
+      "score": "0\u20132",
+      "actual": "Away Win",
+      "predicted": "Away Win",
+      "probs": "0.32 / 0.30 / 0.39"
+    },
+    {
+      "date": "15 Jul 2026",
+      "match": "England vs Argentina",
+      "score": "1\u20132",
+      "actual": "Away Win",
+      "predicted": "Away Win",
+      "probs": "0.23 / 0.25 / 0.52"
+    },
+    {
+      "date": "18 Jul 2026",
+      "match": "France vs England",
+      "score": "4\u20136",
+      "actual": "Away Win",
+      "predicted": "Home Win",
+      "probs": "0.39 / 0.26 / 0.35"
+    },
+    {
+      "date": "19 Jul 2026",
+      "match": "Spain vs Argentina",
+      "score": "1\u20130",
+      "actual": "Home Win",
+      "predicted": "Away Win",
+      "probs": "0.32 / 0.26 / 0.42"
+    }
+  ],
+  "feature_group_importance": {
+    "Elo ratings": 16.29,
+    "Recent form": 0.45,
+    "Experience": 0.37,
+    "Venue": 0.2,
+    "Tournament type": 0.07
+  }
+}
